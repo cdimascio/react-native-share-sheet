@@ -1,0 +1,33 @@
+{
+  "name": "react-native-share-sheet",
+  "version": "0.1.0",
+  "description": "Use the iOS share sheet from React Native",
+  "main": "index.ios.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cdimascio/react-native-share-sheet.git"
+  },
+  "keywords": [
+    "react-native",
+    "share",
+    "share-manager",
+    "share-sheet",
+    "action-sheet",
+    "activity",
+    "activity-sheet",
+    "sheet",
+    "facebook",
+    "twitter",
+    "email"
+  ],
+  "author": "Carmine DiMascio <cdimascio@gmail.com> (https://github.com/cdimascio)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cdimascio/react-native-share-sheet/issues"
+  },
+  "homepage": "https://github.com/cdimascio/react-native-share-sheet#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "react-native": "^0.18.1"
+  }
+}
