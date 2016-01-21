@@ -18,7 +18,7 @@ const share = {
   imageUrl: 'http://facebook.github.io/react-native/img/opengraph.png',
   text: 'some super cool text'
 }
-ShareSheet.open(share)}
+ShareSheet.open(share)
 ```
 
 ##Example
@@ -95,6 +95,11 @@ AppRegistry.registerComponent('ShareSheet', () => ShareSheetDemo);
 ####`url`
 * http://facebook.github.io/react-native/
 
+##MISC
+
+Works great with *react-native-camera*! 
+
+Snap a pic with *react-native-camera* and share it with *react-native-share-sheet*. *react-native-camera* will return the new photo's asset library path which can be shared using *react-native-share-sheet*
 
 ##License
 MIT
