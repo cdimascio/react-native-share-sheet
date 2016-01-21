@@ -6,7 +6,7 @@ Use the iOS share sheet from React Native
 
 1. `npm install react-native-share-sheet`
 2. In XCode, in the project navigator, right click Libraries -> Add Files to  [YourProjectName]
-3. Go to `node_modules/react-native-camera/RNShareSheet` and add `RNShareSheet.m`, `RNShareSheet.swift, RNShareSheet-Bridging-Header.h`
+3. Go to `node_modules/react-native-share-sheet/RNShareSheet` and add `RNShareSheet.m`, `RNShareSheet.swift, RNShareSheet-Bridging-Header.h`
 4. Rename `RNShareSheet-Bridging-Header.h` to `[YourProjectName]-Bridging-Header.h`
 
 ##Use
