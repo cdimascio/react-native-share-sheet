@@ -20,9 +20,9 @@ Use the iOS share sheet from React Native
 ```javascript
 const share = {
   imageUrl: 'http://facebook.github.io/react-native/img/opengraph.png',
-  text: 'some super cool text',
-};
-ShareSheet.open(share);
+  text: 'some super cool text'
+}
+ShareSheet.open(share)
 ```
 
 ## Example
@@ -34,21 +34,23 @@ import React, {
   StyleSheet,
   Text,
   TouchableOpacity,
-  View,
+  View
 } from 'react-native';
 
-import { ShareSheet } from 'NativeModules';
+import { ShareSheet } from 'NativeModules'
 
 const share = {
   url: 'http://facebook.github.io/react-native/',
-  text: 'some super cool text',
+  text: 'some super cool text'
 };
 class ShareSheetDemo extends Component {
   render() {
     return (
       <View style={styles.container}>
         <TouchableOpacity onPress={() => ShareSheet.open(share)}>
-          <Text style={styles.text}>Share</Text>
+          <Text style={styles.text}>
+            Share
+          </Text>
         </TouchableOpacity>
       </View>
     );
@@ -84,9 +86,9 @@ AppRegistry.registerComponent('ShareSheet', () => ShareSheetDemo);
 
 **If both `imageUrl` and `url` specified, `imageUrl` will appear as the share preview**
 
-### Examples
+### Examples 
 
-####`imageUrl`
+#### `imageUrl`
 
 * Asset Library path \* `assets-library://asset/asset.JPG?id=FF5F38D6-AACC-1116-3091-AF3499CD923D&ext=JPG`
 * Image Url \* `http://facebook.github.io/react-native/img/opengraph.png`
@@ -106,5 +108,4 @@ Works great with _react-native-camera_!
 Snap a pic with _react-native-camera_ and share it with _react-native-share-sheet_. _react-native-camera_ will return the new photo's asset library path which can be shared using _react-native-share-sheet_
 
 ## License
-
 MIT
