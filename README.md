@@ -2,53 +2,53 @@
 
 Use the iOS share sheet from React Native
 
-![](https://github.com/cdimascio/react-native-share-sheet/blob/master/assets/share-sheet.jpg?raw=true)
+<p align="center">
+  <img src="https://github.com/cdimascio/react-native-share-sheet/blob/master/assets/share-sheet.jpg?raw=truef" width="350"/>
+</p>
 
-##Install
+## Install
 
 1. `npm install react-native-share-sheet`
 2. In XCode, in the project navigator, right click Libraries -> Add Files to [YourProjectName]
 3. Go to `node_modules/react-native-share-sheet/RNShareSheet` and add `RNShareSheet.m`, `RNShareSheet.swift, RNShareSheet-Bridging-Header.h`
 4. Rename `RNShareSheet-Bridging-Header.h` to `[YourProjectName]-Bridging-Header.h`
 
-##Use
+## Use
 
 `import { ShareSheet } from 'react-native-share-sheet`
 
-```
+```javascript
 const share = {
   imageUrl: 'http://facebook.github.io/react-native/img/opengraph.png',
-  text: 'some super cool text'
-}
-ShareSheet.open(share)
+  text: 'some super cool text',
+};
+ShareSheet.open(share);
 ```
 
-##Example
+## Example
 
-```
+```javascript
 import React, {
   AppRegistry,
   Component,
   StyleSheet,
   Text,
   TouchableOpacity,
-  View
+  View,
 } from 'react-native';
 
-import { ShareSheet } from 'NativeModules'
+import { ShareSheet } from 'NativeModules';
 
 const share = {
   url: 'http://facebook.github.io/react-native/',
-  text: 'some super cool text'
+  text: 'some super cool text',
 };
 class ShareSheetDemo extends Component {
   render() {
     return (
       <View style={styles.container}>
         <TouchableOpacity onPress={() => ShareSheet.open(share)}>
-          <Text style={styles.text}>
-            Share
-          </Text>
+          <Text style={styles.text}>Share</Text>
         </TouchableOpacity>
       </View>
     );
@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
 AppRegistry.registerComponent('ShareSheet', () => ShareSheetDemo);
 ```
 
-##Options
+## Options
 
 | Property |          |               Value                |
 | -------- | -------- | :--------------------------------: |
@@ -84,24 +84,27 @@ AppRegistry.registerComponent('ShareSheet', () => ShareSheetDemo);
 
 **If both `imageUrl` and `url` specified, `imageUrl` will appear as the share preview**
 
-###Examples ####`imageUrl`
+### Examples
+
+####`imageUrl`
 
 * Asset Library path \* `assets-library://asset/asset.JPG?id=FF5F38D6-AACC-1116-3091-AF3499CD923D&ext=JPG`
 * Image Url \* `http://facebook.github.io/react-native/img/opengraph.png`
 
-####`text`
+#### `text`
 
 * \#ReactNative is awesome!
 
-####`url`
+#### `url`
 
 * http://facebook.github.io/react-native/
 
-##MISC
+## MISC
 
 Works great with _react-native-camera_!
 
 Snap a pic with _react-native-camera_ and share it with _react-native-share-sheet_. _react-native-camera_ will return the new photo's asset library path which can be shared using _react-native-share-sheet_
 
-##License
+## License
+
 MIT
